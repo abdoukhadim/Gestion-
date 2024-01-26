@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gestion</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo">
+      <img src="image/logo.jpg" alt="logo">
+    </div>
+
+    <div class="content-header">
+      
+      <div class="header-text">
+
+                    <!-- ================================= Budget ============================ -->
+        
+        <div class="header-content-text">
+          <div class="title-box">
+            <p>Budget</p>
+          </div>
+          <div class="content-box">
+            <p id="budget-value"> 0 FCFA</p>
+          </div>
+        </div>
+
+                    <!-- ================================= Dépenses ============================ -->
+        
+        <div class="header-content-text">
+          <div class="title-box">
+            <p>Dépenses</p>
+          </div>
+          <div class="content-box">
+            <p id="depense-value">  0 FCFA</p>
+          </div>
+        </div>
+
+                    <!-- ================================= Solde ============================ -->
+
+        <div class="header-content-text">
+          <div class="title-box">
+            <p>Solde</p>
+          </div>
+          <div class="content-box">
+            <p id="solde-value"> 0 FCFA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table id="depenses">
+      <caption>Liste des dépenses</caption>
+
+      <thead>
+        <tr>
+          <th>titre</th>
+          <th>montant</th>
+          <th>actios</th>
+        </tr>
+      </thead>
+
+    
+
+      <tfoot>
+        <tr>
+          <td class="link"><p>ajouter dépense</p> <a href="#un">+</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    
+    <!-- ================================= Revenu ============================ -->
+
+    <table id="revenus">
+      <caption>Liste des revenus</caption>
+
+      <thead>
+        <tr>
+          <th>titre</th>
+          <th>montant</th>
+          <th>actios</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <td class="link"><p>ajouter revenu</p> <a href="#deux">+</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="content-des-deps" id="un">
+      <div class="title-deps">
+        <h2>ajouter dépense</h2>
+      </div>
+  
+      <div id="form-des-deps">
+  
+        <label for="valeurtitre">titre</label>
+        <input type="text" name="valeurtitre" id="valeurtitre" required placeholder="Entrer la titre" autocomplete="off">
+  
+        <label for="valeurmon">montant</label>
+        <input type="number" name="valeurmon" id="valeurmon" required placeholder="Entrer le montant Ex: 20.000 FCFA" autocomplete="off">
+  
+        <button id="sub">valider</button>
+      </div>
+    </div>
+
+    <div class="content-des-revs" id="deux">
+      <div class="title-deps">
+        <h2>ajouter revenu</h2>
+      </div>
+  
+      <div id="form-des-revs">
+  
+        <label for="valuetitres">titre</label>
+        <input type="text" name="valuetitres" id="valuetitres" required placeholder="Entrer la titre" autocomplete="off">
+  
+        <label for="valeurmons">montant</label>
+        <input type="number" name="valeurmons" id="valeurmons" required placeholder="Entrer le montant Ex: 20.000 FCFA" autocomplete="off">
+  
+        <button id="submit">valider</button>
+      </div>
+    </div>
+  </div>
+  <script src="apps.js"></script>
+</body>
+</html>
